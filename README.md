@@ -6,15 +6,21 @@ ASP.NET Core MVC w/o EF
 ----------------
 
 Database MoviesDB:
-[MovieID] [int] IDENTITY(1,1) NOT NULL,
-[Title] [varchar](100) NULL,
-[Director] [varchar](100) NULL,
+
+```
+[MovieID] [int] IDENTITY(1,1) NOT NULL
+
+[Title] [varchar] (100) NULL,
+
+[Director] [varchar] (100) NULL,
+
 [Rating] [int] NULL,
 
---------------------
+```
 
 Stored procedures:
 
+```
 1) 
 CREATE PROCEDURE [dbo].[MovieAddOrEdit]
 	@MovieID INT,
@@ -42,7 +48,8 @@ BEGIN
 END
 GO
 
-----------------------------------
+```
+```
 2)
  
 CREATE PROCEDURE [dbo].[MovieViewAll] 
@@ -56,7 +63,8 @@ BEGIN
 END
 GO
 
-----------------------------------
+```
+```
 3)
 
 CREATE PROCEDURE [dbo].[MovieViewByID] 
@@ -70,7 +78,8 @@ BEGIN
 END
 GO
 
-----------------------------------
+```
+```
 4)
 
 CREATE PROCEDURE [dbo].[MovieDeleteByID] 
@@ -83,7 +92,7 @@ BEGIN
 	DELETE Movies WHERE MovieID = @MovieID
 END
 GO
-
+```
 
 
 
