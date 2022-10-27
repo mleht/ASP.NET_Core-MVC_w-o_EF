@@ -8,7 +8,7 @@ ASP.NET Core MVC w/o EF
 Database MoviesDB:
 
 ```
-[MovieID] [int] IDENTITY(1,1) NOT NULL
+[MovieID] [int] IDENTITY(1,1) NOT NULL (Primary key)
 
 [Title] [varchar] (100) NULL,
 
